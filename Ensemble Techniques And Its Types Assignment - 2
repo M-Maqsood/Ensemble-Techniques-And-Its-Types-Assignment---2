@@ -1,0 +1,31 @@
+
+Q1. How does bagging reduce overfitting in decision trees?
+Ans: Overfitting is a problem that can occur in machine learning models when the model learns the training data too well and is not able to generalize to new data. This can happen when the model is too complex or when the training data is not representative of the real world data.
+Bagging can help to reduce overfitting in decison trees by creating a diverse set of models. This is because each model is trained on a different bootstrap sample of the data, which means that each model will learn different patterns in the data. This can help to prevent overfitting the models from becoming too complex and overfit the training data.
+
+Q2. What are the advantages and disadvantages of using different types of base learners in bagging?
+
+Advantages:
+Diversity: Using different types of base learners can help to create a more diverse ensemble, which can improve the overall performance of the model.
+Robustness: Using different types of base learners can help to make the ensemble more robust to noise and outliers in the data. This is because different types of base learners are likely to be affected by noise and outliers in different ways.
+Disadvantages
+Computational complexity: Using different types of base learners can increase the computational complexity of the bagging algorithm.
+Q3. How does the choice of base learner affect the bias-variance tradeoff in bagging?
+Ans: A bias of a base learner is how far away its predictions are from the true value. A variance is how much its predictions vary from one data set to another.
+Examples of base learners with different bias and variance:
+
+Decision trees: Decision trees are a type of model that is known for its low bias. However decision trees can also have high variance, especially if they are grown too deep.
+Linear regression models: Linear regression models are a type of model that is known for its low variance. However, it can have high bias if relationship between features is not linear.
+Support Vector machines: Support vector machines are a type of model that have low bias and low variance but they can be computationally expensive.
+Q4. Can bagging be used for both classification and regression tasks? How does it differ in each case?
+Ans: Yes, bagging can be used for both classification and regression tasks. In the case of classification, bagging works by training multiple decision trees on bootstrap samples of training data. The prediction of individual trees are then voted to get the final prediction.
+In the case of regression, bagging works by training multiple linear regression models on bootstrap samples of the training data. The predictions of the individual models are then averaged to produce the final prediction.
+
+Q5. What is the role of ensemble size in bagging? How many models should be included in the ensemble?
+Ans: A larger size will reduce the variance of the ensemble model. This is because each model in the ensemble will be less likely to overfit the training data, as it will be trained on smaller subset of the data.
+A smaller ensemble size will reduce the bias of the ensemble model. This is because the ensemble model will be more likely to be representative of the training data, as it will be trained on a larger subset of the data.
+
+Q6. Can you provide an example of a real-world application of bagging in machine learning?
+Ans: Fraud detection: Bagging can be used to detect fraud by training multiple decision trees on bootstrap samples of the data. The predictions of the individual trees can then be combined to produce a final prediction of whether a transaction is fraud or not.
+
+ 
